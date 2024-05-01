@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Vanilla Weather App Project</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main class="main-container">
+        <div>
+          <h1 class="city" id="search-city"></h1>
+          <p>
+            <span id="time"></span><strong id="description"></strong>
+            <br />
+            Humidity: <strong id="humidity"></strong>, Wind Speed:
+            <strong id="wind-speed"></strong>
+          </p>
+        </div>
+        <div class="weather-temp-container">
+          <div class="weather-temp-icon" id="icon"></div>
+          <div class="weather-temp-value" id="temp-value"></div>
+          <div class="weather-temp-units">ºC</div>
+        </div>
+      </main>
+        <div class="weather-forecast" id="forecast"></div>
+      
+    </div>
+
+    <footer>
+        This project was coded by
+        <a href="https://www.linkedin.com/in/camilla-luna-mcgoldrick-7982b7303/" target="_blank"
+          >Camilla Luna-McGoldrick 👽</a>, is
+        <a
+          href="https://github.com/millamcg1/cool-vanilla-weather-app"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a
+          href="https://funny-kringle-8bc28e.netlify.app/"
+          target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
